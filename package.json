@@ -1,0 +1,14 @@
+{
+  "name": "food-style",
+  "version": "1.0.0",
+  "description": "Project about photograph food",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch src/sass:dist/css"
+  },
+  "author": "Raphael Pinheiro",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.82.0"
+  }
+}
