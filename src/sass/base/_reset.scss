@@ -1,0 +1,33 @@
+// Border sizing rules
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+// Remove default margin
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+  margin: 0;
+}
+
+// Make images easier to work with
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+// Inherit fonts for buttons
+
+button {
+  font-family: inherit;
+}

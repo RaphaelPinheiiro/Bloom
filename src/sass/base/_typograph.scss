@@ -1,0 +1,71 @@
+// Body
+
+body {
+  font-family: "barlow";
+  font-size: var(--fs-200);
+  line-height: 1.6;
+  color: var(--clr-light-100);
+}
+
+// Font-family
+h2,
+h3,
+h4,
+a {
+  font-family: "condensed";
+}
+
+.ff-infant {
+  font-family: "infant";
+}
+
+// Font-weight
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-weight: 400;
+}
+
+a,
+strong {
+  font-weight: 700;
+}
+
+// line-height
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+}
+
+// Font-size
+
+h2,
+.h2 {
+  font-size: var(--fs-500);
+}
+
+h3,
+.h3 {
+  font-size: var(--fs-300);
+}
+
+.fs-800 {
+  font-size: clamp(var(--fs-800), calc(1rem + 5vw), 5rem);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+// Uppercase and decoration
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+}

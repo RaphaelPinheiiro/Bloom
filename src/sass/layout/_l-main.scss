@@ -1,0 +1,99 @@
+@use "../tools" as *;
+
+.l-main {
+  display: flex;
+  flex-direction: column;
+
+  &__intro {
+    display: grid;
+    min-height: 100vh;
+  }
+
+  &__slide {
+    background-image: linear-gradient(
+        hsla(0, 0%, 10%, 0.3),
+        hsla(0, 0%, 10%, 1)
+      ),
+      url("/src/image/01.webp");
+    background-position: center;
+    background-size: cover;
+    min-height: 20vh;
+  }
+
+  &__about {
+    display: grid;
+  }
+
+  &__profile {
+    display: grid;
+    max-width: 60%;
+    gap: 1.5rem;
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__title {
+    letter-spacing: 0.125em;
+  }
+
+  &__subtitle {
+    letter-spacing: 0.25em;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 2px;
+      margin: 20px auto;
+      background-color: var(--clr-light-200);
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__title,
+  &__subtitle,
+  &__paragraph {
+    margin: 1.5rem 0;
+  }
+
+  &__paragraph {
+    hyphens: auto;
+    overflow-wrap: break-word;
+    text-align: justify;
+  }
+
+  @include breakPoints("medium") {
+    &__intro {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    &__info {
+      display: flex;
+    }
+
+    &__about {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__profile {
+      grid-template-columns: min(180px, 20%) 1fr;
+      max-width: 100%;
+    }
+
+    &__title {
+      text-align: left;
+    }
+  }
+}
+
+.c-button {
+  margin-bottom: 1.5rem;
+}

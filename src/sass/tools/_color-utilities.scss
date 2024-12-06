@@ -1,0 +1,9 @@
+@use "../abstract" as *;
+
+.bg-yellow {
+  background-color: var(--clr-yellows-500);
+}
+
+.bg-green {
+  background-color: var(--clr-greens-500);
+}
