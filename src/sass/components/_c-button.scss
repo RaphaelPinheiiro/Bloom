@@ -1,7 +1,7 @@
 @use "../abstract" as *;
 
 .c-button {
-  display: block;
+  display: inline-block;
   border-radius: 4px;
   background-color: var(--clr-light-100);
   color: var(--clr-neutral-500);
