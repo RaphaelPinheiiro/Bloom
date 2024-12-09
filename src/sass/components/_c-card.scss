@@ -1,0 +1,11 @@
+@use "../abstract" as *;
+
+.c-card {
+  background-color: var(--clr-greens-500);
+
+  &__name {
+    color: var(--clr-light-100);
+    text-align: center;
+    padding: 1em 0;
+  }
+}

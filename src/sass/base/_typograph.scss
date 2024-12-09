@@ -11,7 +11,8 @@ body {
 h2,
 h3,
 h4,
-a {
+a,
+button {
   font-family: "condensed";
 }
 
@@ -61,7 +62,11 @@ h3,
 
 // Uppercase and decoration
 
+button,
 a {
   text-transform: uppercase;
+}
+
+a {
   text-decoration: none;
 }
