@@ -23,11 +23,19 @@
   }
 
   &__button {
+    cursor: pointer;
     border: none;
     border-radius: 4px;
     background-color: var(--clr-yellows-500);
     color: var(--clr-light-100);
+    letter-spacing: 0.25em;
     padding: 0.65em 4em;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
+    transition: $transition-global;
+
+    &:hover,
+    &:focus {
+      background-color: var(--clr-neutral-500);
+    }
   }
 }

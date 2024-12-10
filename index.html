@@ -13,13 +13,19 @@
     <header class="l-header"></header>
     <main class="l-main">
       <section class="l-main__intro">
-        <div class="wrapper">
-          <h2 class="l-main__title ff-infant fs-800">Food style</h2>
+        <div class="wrapper align-center">
+          <h2 class="l-main__title ff-infant fs-800">Food <span class="d-block">style</span></h2>
           <p class="l-main__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil excepturi illum
             veniam, quae soluta inventore,
             ex quaerat itaque ullam reprehenderit commodi fuga repellat omnis recusandae? Consequuntur, porro at. Nobis,
             expedita.</p>
           <a class="c-button" href="#">Button</a>
+        </div>
+        <div class="l-main__slider">
+          <button class="c-dots"></button>
+          <button class="c-dots"></button>
+          <button class="c-dots"></button>
+          <button class="c-dots"></button>
         </div>
       </section>
       <aside class="l-main__info bg-yellow">
@@ -44,7 +50,7 @@
       </aside>
       <section class="l-main__about">
         <div class="wrapper">
-          <h2 class="l-main__title">About me</h2>
+          <h2 class="l-main__title text-left">About me</h2>
           <figure class="l-main__profile">
             <picture class="l-main__avatar">
               <source srcset="/src/image/03.webp" type="image/webp">
@@ -73,7 +79,6 @@
             <button class="c-tabs">Drink</button>
             <button class="c-tabs">Sweet</button>
             <button class="c-tabs">Salty</button>
-            <button class="c-tabs">View all</button>
           </div>
         </div>
         <div class="l-main__gallery">
@@ -98,10 +103,31 @@
             </picture>
             <figcaption class="c-card__name ff-infant">Sushi</figcaption>
           </figure>
+          <figure class="c-card">
+            <picture class="c-card__view">
+              <source srcset="/src/image/08.webp" type="image/webp">
+              <img src="/src/image/08.jpg" alt="Popcorn">
+            </picture>
+            <figcaption class="c-card__name ff-infant">Popcorn</figcaption>
+          </figure>
+          <figure class="c-card">
+            <picture class="c-card__view">
+              <source srcset="/src/image/09.webp" type="image/webp">
+              <img src="/src/image/09.jpg" alt="Chocolate cake">
+            </picture>
+            <figcaption class="c-card__name ff-infant">Chocolate cake</figcaption>
+          </figure>
+          <figure class="c-card">
+            <picture class="c-card__view">
+              <source srcset="/src/image/11.webp" type="image/webp">
+              <img src="/src/image/11.jpg" alt="Risotto">
+            </picture>
+            <figcaption class="c-card__name ff-infant">Risotto</figcaption>
+          </figure>
         </div>
       </section>
       <section class="l-main__contact bg-green">
-        <div class="wrapper">
+        <div class="wrapper r-margin">
           <h2 class="l-main__title">Contact us</h2>
           <form class="c-form" action="#">
             <label class="c-form__label" for="fname">First name</label>
@@ -121,7 +147,7 @@
         </picture>
       </section>
     </main>
-    <footer class="l-footer"></footer>
+    <footer class="l-footer">&copy;Bloom</footer>
   </div>
 </body>
 

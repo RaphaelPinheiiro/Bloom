@@ -4,13 +4,32 @@
   display: flex;
   flex-direction: column;
 
-  &__intro {
-    text-align: center;
+  &__intro,
+  &__about,
+  &__profile,
+  &__gallery,
+  &__contact {
+    display: grid;
   }
 
-  &__about,
-  &__profile {
-    display: grid;
+  &__slider,
+  &__tabs {
+    display: flex;
+  }
+
+  &__intro {
+    text-align: center;
+    min-height: 100vh;
+  }
+
+  &__slider {
+    place-items: end;
+    justify-content: center;
+    background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsla(0, 0%, 10%, 1)),
+      url("/src/image/01.webp");
+    background-position: center;
+    background-size: cover;
+    min-height: 30vh;
   }
 
   &__profile {
@@ -19,14 +38,20 @@
 
   &__avatar {
     border-radius: 50%;
-    max-width: 60%;
+    max-width: 50%;
     justify-self: center;
     overflow: hidden;
   }
 
   &__tabs {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.1rem;
+    margin: 1.5rem;
   }
 
   &__title,
@@ -47,20 +72,21 @@
     }
   }
 
+  &__title,
+  &__subtitle,
   &__name {
     text-align: center;
   }
 
   &__title,
   &__subtitle {
-    text-align: center;
     text-transform: uppercase;
   }
 
   &__title,
   &__subtitle,
   &__paragraph {
-    margin: 1.5rem 0;
+    margin: 3rem 0;
   }
 
   &__paragraph {
@@ -68,8 +94,48 @@
     overflow-wrap: break-word;
     text-align: justify;
   }
+
+  @include breakPoints("medium") {
+    &__intro {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    &__info {
+      display: flex;
+    }
+
+    &__about,
+    &__contact {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__profile {
+      grid-template-columns: minmax(100px, 15%) 1fr;
+    }
+
+    &__avatar {
+      max-width: 100%;
+    }
+
+    &__name {
+      place-self: center left;
+    }
+
+    &__gallery {
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .text-left {
+      text-align: left;
+    }
+  }
 }
 
-.c-button {
+.align-center {
+  align-self: center;
+}
+
+.c-button,
+.c-dots {
   margin-bottom: 1.5rem;
 }
