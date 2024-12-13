@@ -46,6 +46,11 @@ h4 {
 
 // Font-size
 
+h1,
+.h1 {
+  font-size: (var(--fs-400));
+}
+
 h2,
 .h2 {
   font-size: var(--fs-500);

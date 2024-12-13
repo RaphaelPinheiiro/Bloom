@@ -1,2 +1,26 @@
+@use "../abstract" as *;
+@use "../tools" as *;
+
 .l-header {
+  background-color: var(--clr-yellows-500);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+
+  &__title {
+    padding: 1rem 0;
+  }
+
+  @include breakPoints("small") {
+    .c-open {
+      display: none;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
