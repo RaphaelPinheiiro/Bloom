@@ -1,0 +1,31 @@
+@use "../abstract" as *;
+
+.c-sidebar {
+  display: grid;
+  background-color: var(--clr-neutral-500);
+  position: fixed;
+  inset: 0 0 0 50%;
+  z-index: 10;
+  transform: translateX(100%);
+  transition: $transition-global;
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__link {
+    color: var(--clr-light-100);
+    transition: $transition-global;
+
+    &:hover,
+    &:focus {
+      color: var(--clr-yellows-300);
+    }
+  }
+}
+
+.c-sidebar--visible {
+  transform: translateX(0);
+}

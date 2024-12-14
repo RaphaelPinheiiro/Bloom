@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="dist/css/index.css">
+  <script src="/src/js/sidebar.js" defer></script>
   <title>Luciano Fagner</title>
 </head>
 
@@ -13,10 +14,19 @@
     <header class="l-header">
       <div class="wrapper grid">
         <h1 class="l-header__title ff-infant">Luciano Fagner</h1>
-        <button class="c-open">&#9776</button>
+        <button class="c-open js-open">&#9776</button>
       </div>
     </header>
-    <main class="l-main">
+    <nav class="c-sidebar js-sidebar">
+      <!-- <button class="c-close">&times;</button> -->
+      <menu role="list" class="c-sidebar__menu">
+        <li class="c-sidebar__item"><a href="#" class="c-sidebar__link">Início</a></li>
+        <li class="c-sidebar__item"><a href="#" class="c-sidebar__link">About me</a></li>
+        <li class="c-sidebar__item"><a href="#" class="c-sidebar__link">Photograph</a></li>
+        <li class="c-sidebar__item"><a href="#" class="c-sidebar__link">Contact us</a></li>
+      </menu>
+    </nav>
+    <main class="l-main js-main">
       <section class="l-main__intro">
         <div class="wrapper align-center">
           <h2 class="l-main__title ff-infant fs-800">Food <span class="d-block">style</span></h2>
