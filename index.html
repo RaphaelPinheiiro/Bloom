@@ -9,7 +9,7 @@
   <title>Luciano Fagner</title>
 </head>
 
-<body>
+<body class="js-body">
   <div class="l-container">
     <header class="l-header">
       <div class="wrapper grid">
@@ -18,16 +18,16 @@
       </div>
     </header>
     <nav class="c-sidebar js-sidebar">
-      <!-- <button class="c-close">&times;</button> -->
+      <button class="c-close js-close">&times;</button>
       <menu role="list" class="c-sidebar__menu">
-        <li class="c-sidebar__item"><a href="#" class="c-sidebar__link">Início</a></li>
-        <li class="c-sidebar__item"><a href="#" class="c-sidebar__link">About me</a></li>
-        <li class="c-sidebar__item"><a href="#" class="c-sidebar__link">Photograph</a></li>
-        <li class="c-sidebar__item"><a href="#" class="c-sidebar__link">Contact us</a></li>
+        <li class="c-sidebar__item"><a href="#inicio" class="c-sidebar__link">Início</a></li>
+        <li class="c-sidebar__item"><a href="#about" class="c-sidebar__link">About me</a></li>
+        <li class="c-sidebar__item"><a href="#photograph" class="c-sidebar__link">Photograph</a></li>
+        <li class="c-sidebar__item"><a href="#contact" class="c-sidebar__link">Contact us</a></li>
       </menu>
     </nav>
     <main class="l-main js-main">
-      <section class="l-main__intro">
+      <section id="inicio" class="l-main__intro">
         <div class="wrapper align-center">
           <h2 class="l-main__title ff-infant fs-800">Food <span class="d-block">style</span></h2>
           <p class="l-main__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil excepturi illum
@@ -63,7 +63,7 @@
             laboriosam sit commodi illo.</p>
         </article>
       </aside>
-      <section class="l-main__about">
+      <section id="about" class="l-main__about">
         <div class="wrapper">
           <h2 class="l-main__title text-left">About me</h2>
           <figure class="l-main__profile">
@@ -87,7 +87,7 @@
           <img class="l-main__background" src="/src/image/02.jpg" alt="This is making off about Luciano Fagner">
         </picture>
       </section>
-      <section class="l-main__photograph">
+      <section id="photograph" class="l-main__photograph">
         <div class="wrapper">
           <h2 class="l-main__title">Photograph</h2>
           <div class="l-main__tabs">
@@ -141,7 +141,7 @@
           </figure>
         </div>
       </section>
-      <section class="l-main__contact bg-green">
+      <section id="contact" class="l-main__contact bg-green">
         <div style="padding: 0 1.5rem;">
           <h2 class="l-main__title">Contact us</h2>
           <form class="c-form" action="#">

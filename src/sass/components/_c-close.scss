@@ -5,10 +5,11 @@
   background-color: transparent;
   border: none;
   color: var(--clr-light-100);
-  font-size: 2.4rem;
+  font-size: 2.7rem;
   align-self: center;
   justify-self: start;
   transition: $transition-global;
+  margin: 1.125rem 0 0 2.5rem;
 
   &:hover,
   &:focus {

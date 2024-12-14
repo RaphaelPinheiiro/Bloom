@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-block-start: 3.5rem;
+}
+
 body {
   background-color: var(--clr-neutral-500);
   min-height: 100vh;
