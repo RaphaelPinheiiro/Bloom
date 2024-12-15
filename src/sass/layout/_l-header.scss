@@ -13,14 +13,21 @@
     padding: 1rem 0;
   }
 
-  @include breakPoints("small") {
+  @include breakPoints("large") {
     .c-open {
       display: none;
+    }
+
+    .c-nav {
+      display: block;
     }
   }
 }
 
-.grid {
-  display: grid;
+.d-grid {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.c-nav {
+  display: none;
 }

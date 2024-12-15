@@ -1,0 +1,19 @@
+@use "../abstract" as *;
+
+.c-nav {
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  &__link {
+    color: var(--clr-light-100);
+    transition: $transition-global;
+
+    &:hover,
+    &:focus {
+      color: var(--clr-yellows-300);
+    }
+  }
+}

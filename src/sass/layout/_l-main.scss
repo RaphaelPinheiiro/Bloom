@@ -54,7 +54,7 @@
   &__gallery {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 0.1rem;
-    margin: 1.5rem;
+    margin: 1.5rem 0;
   }
 
   &__title,
@@ -103,10 +103,6 @@
       grid-template-columns: 1fr 2fr;
     }
 
-    &__info {
-      display: flex;
-    }
-
     &__about,
     &__contact {
       grid-template-columns: repeat(2, 1fr);
@@ -131,11 +127,11 @@
     .text-left {
       text-align: left;
     }
+    .d-flex {
+      display: flex;
+      gap: 1.5rem;
+    }
   }
-}
-
-.align-center {
-  align-self: center;
 }
 
 .main--opacity {
