@@ -21,5 +21,3 @@ MAIN.addEventListener("click", () => {
   MAIN.classList.remove("main--opacity");
   BODY.classList.remove("body--hidden");
 });
-
-console.log(BODY);

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="dist/css/index.css">
   <script src="/src/js/sidebar.js" defer></script>
+  <script src="/src/js/slider.js" defer></script>
   <title>Luciano Fagner</title>
 </head>
 
@@ -32,8 +33,8 @@
         <li class="c-sidebar__item"><a href="#contact" class="c-sidebar__link">Contact us</a></li>
       </menu>
     </nav>
-    <main class="l-main js-main">
-      <section id="inicio" class="l-main__intro wrapper">
+    <main class="l-main js-main wrapper">
+      <section id="inicio" class="l-main__intro">
         <div class="align-center padding">
           <h2 class="l-main__title ff-infant fs-800">Food <span class="d-block">style</span></h2>
           <p class="l-main__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil excepturi illum
@@ -42,14 +43,22 @@
             expedita.</p>
           <a class="c-button" href="#">Button</a>
         </div>
-        <div class="l-main__slider">
-          <button class="c-dots"></button>
-          <button class="c-dots"></button>
-          <button class="c-dots"></button>
-          <button class="c-dots"></button>
+        <div class="l-main__slider js-slider bg-slider4" role="tablist" aria-label="slider list">
+          <button class="c-dots" aria-selected="true" role="tab" tabindex="0">
+            <span class="sr-only">1</span>
+          </button>
+          <button class="c-dots" aria-selected="false" role="tab" tabindex="-1">
+            <span class="sr-only">2</span>
+          </button>
+          <button class="c-dots" aria-selected="false" role="tab" tabindex="-1">
+            <span class="sr-only">3</span>
+          </button>
+          <button class="c-dots" aria-selected="false" role="tab" tabindex="-1">
+            <span class="sr-only">4</span>
+          </button>
         </div>
       </section>
-      <aside class="l-main__info bg-yellow wrapper padding d-flex">
+      <aside class="l-main__info bg-yellow padding d-flex">
         <article class="l-main__column">
           <h3 class="l-main__subtitle">Photograph</h3>
           <p class="l-main__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquid enim
@@ -69,7 +78,7 @@
             laboriosam sit commodi illo.</p>
         </article>
       </aside>
-      <section id="about" class="l-main__about wrapper">
+      <section id="about" class="l-main__about">
         <div class="padding">
           <h2 class="l-main__title text-left">About me</h2>
           <figure class="l-main__profile">
@@ -93,13 +102,13 @@
           <img class="l-main__background" src="/src/image/02.jpg" alt="This is making off about Luciano Fagner">
         </picture>
       </section>
-      <section id="photograph" class="l-main__photograph wrapper">
-        <div>
+      <section id="photograph" class="l-main__photograph">
+        <div class="padding">
           <h2 class="l-main__title">Photograph</h2>
           <div class="l-main__tabs">
-            <button class="c-tabs">Drink</button>
-            <button class="c-tabs">Sweet</button>
-            <button class="c-tabs">Salty</button>
+            <button class="c-dots"><span class="sr-only">1</span></button>
+            <button class="c-dots"><span class="sr-only">2</span></button>
+            <button class="c-dots"><span class="sr-only">3</span></button>
           </div>
         </div>
         <div class="l-main__gallery">
@@ -145,9 +154,23 @@
             </picture>
             <figcaption class="c-card__name ff-infant">Risotto</figcaption>
           </figure>
+          <figure class="c-card">
+            <picture class="c-card__view">
+              <source srcset="/src/image/12.webp" type="image/webp">
+              <img src="/src/image/12.jpg" alt="Salmon">
+            </picture>
+            <figcaption class="c-card__name ff-infant">Salmon</figcaption>
+          </figure>
+          <figure class="c-card">
+            <picture class="c-card__view">
+              <source srcset="/src/image/01.webp" type="image/webp">
+              <img src="/src/image/01.jpg" alt="Temaki">
+            </picture>
+            <figcaption class="c-card__name ff-infant">Temaki</figcaption>
+          </figure>
         </div>
       </section>
-      <section id="contact" class="l-main__contact bg-green wrapper">
+      <section id="contact" class="l-main__contact bg-green">
         <div>
           <h2 class="l-main__title">Contact us</h2>
           <form class="c-form padding" action="#">
@@ -168,7 +191,7 @@
         </picture>
       </section>
     </main>
-    <footer class="l-footer">&copy;Bloom</footer>
+    <footer class="l-footer wrapper">&copy;Bloom</footer>
   </div>
 </body>
 

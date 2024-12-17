@@ -1,6 +1,10 @@
+@use "../abstract" as *;
+
 html {
   scroll-behavior: smooth;
   scroll-padding-block-start: 3.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--clr-light-100) var(--clr-neutral-500);
 }
 
 body {
