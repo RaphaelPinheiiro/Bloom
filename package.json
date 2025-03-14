@@ -1,7 +1,7 @@
 {
-  "name": "food-style",
+  "name": "bloom",
   "version": "1.0.0",
-  "description": "Project about photograph food",
+  "description": "Project about wedding",
   "main": "index.js",
   "scripts": {
     "dev": "sass --watch src/sass:dist/css"

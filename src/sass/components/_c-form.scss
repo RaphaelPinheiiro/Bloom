@@ -12,13 +12,13 @@
     font-size: max(16px, 1em);
     font-family: inherit;
     padding: 0.25em 0.5em;
-    background-color: var(--clr-light-100);
+    background-color: var(--clr-bloom-100);
     border-radius: 4px;
     border: none;
 
     &:focus {
-      border-color: var(--clr-greens-300);
-      box-shadow: 0 0 5px 3px var(--clr-greens-300);
+      border-color: var(--clr-bloom-200);
+      box-shadow: 0 0 5px 3px var(--clr-bloom-200);
       outline: 3px solid transparent;
     }
 
@@ -32,8 +32,8 @@
     cursor: pointer;
     border: none;
     border-radius: 4px;
-    background-color: var(--clr-yellows-500);
-    color: var(--clr-light-100);
+    background-color: var(--clr-bloom-500);
+    color: var(--clr-bloom-100);
     letter-spacing: 0.25em;
     padding: 0.65em 4em;
     margin: 1.5rem 0;
@@ -41,7 +41,7 @@
 
     &:hover,
     &:focus {
-      background-color: var(--clr-neutral-500);
+      background-color: var(--clr-bloom-600);
     }
   }
 }

@@ -4,7 +4,7 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
-  color: var(--clr-light-100);
+  color: var(--clr-bloom-100);
   font-size: 2.4rem;
   align-self: center;
   justify-self: end;
@@ -12,6 +12,6 @@
 
   &:hover,
   &:focus {
-    color: var(--clr-yellows-200);
+    color: var(--clr-bloom-200);
   }
 }

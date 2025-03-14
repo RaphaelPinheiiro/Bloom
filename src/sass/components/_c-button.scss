@@ -3,14 +3,14 @@
 .c-button {
   display: inline-block;
   border-radius: 4px;
-  background-color: var(--clr-light-100);
-  color: var(--clr-neutral-500);
+  background-color: var(--clr-bloom-500);
+  color: var(--clr-bloom-100);
   padding: 0.65em 4em;
   transition: $transition-global;
 
   &:hover,
   &:focus {
-    background-color: var(--clr-yellows-500);
-    color: var(--clr-light-100);
+    background-color: var(--clr-bloom-100);
+    color: var(--clr-bloom-500);
   }
 }

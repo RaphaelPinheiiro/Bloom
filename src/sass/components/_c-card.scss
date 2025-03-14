@@ -1,10 +1,10 @@
 @use "../abstract" as *;
 
 .c-card {
-  background-color: var(--clr-greens-500);
+  background-color: var(--clr-bloom-200);
 
   &__name {
-    color: var(--clr-light-100);
+    color: var(--clr-bloom-100);
     text-align: center;
     padding: 1em 0;
   }
