@@ -3,7 +3,7 @@
 .c-dots {
   cursor: pointer;
   background-color: transparent;
-  border: 2px solid var(--clr-light-100);
+  border: 2px solid var(--clr-bloom-100);
   border-radius: 50%;
   padding: 0.5rem;
   margin: 0 1rem;
@@ -11,7 +11,7 @@
 
   &:hover,
   &:focus {
-    background-color: var(--clr-light-100);
+    background-color: var(--clr-bloom-100);
     transform: scale(1.2);
   }
 }
