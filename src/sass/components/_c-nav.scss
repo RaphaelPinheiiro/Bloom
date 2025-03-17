@@ -1,6 +1,8 @@
 @use "../abstract" as *;
 
 .c-nav {
+  margin: auto 0;
+
   &__menu {
     display: flex;
     justify-content: space-between;

@@ -10,7 +10,8 @@ h2,
 h3,
 h4,
 p,
-figure {
+figure,
+menu {
   margin: 0;
 }
 
@@ -123,6 +124,12 @@ body {
 
 .bg-gallery3 {
   background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsl(0, 0%, 10%)), url("/src/image/wedding/annike&thiago/18.webp");
+  background-position: top;
+  background-size: cover;
+}
+
+.bg-gallery4 {
+  background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsl(0, 0%, 10%)), url("/src/image/wedding/adriane&diogo/11.webp");
   background-position: top;
   background-size: cover;
 }
@@ -391,6 +398,9 @@ a {
   overflow: hidden;
 }
 
+.c-nav {
+  margin: auto 0;
+}
 .c-nav__menu {
   display: flex;
   justify-content: space-between;
@@ -417,6 +427,10 @@ a {
   right: 0;
   top: 0;
   z-index: 1;
+}
+.l-header__logo {
+  width: 60px;
+  height: 60px;
 }
 .l-header__title {
   padding: 1rem 0;
