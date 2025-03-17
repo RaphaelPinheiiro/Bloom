@@ -1,0 +1,17 @@
+@use "../abstract" as *;
+
+.c-arrow {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--clr-bloom-100);
+  font-size: 2.4rem;
+  align-self: center;
+  justify-self: end;
+  transition: $transition-global;
+
+  &:hover,
+  &:focus {
+    color: var(--clr-bloom-200);
+  }
+}

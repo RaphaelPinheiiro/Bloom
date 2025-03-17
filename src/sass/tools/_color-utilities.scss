@@ -6,5 +6,21 @@
 
 .bg-slider1 {
   background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsla(0, 0%, 10%, 1)),
-    url("/src/image/01.webp");
+    url("/src/image/portrait/raizamiguel/01.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-gallery1 {
+  background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsla(0, 0%, 10%, 1)),
+    url("/src/image/portrait/enya&marcus/08.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-gallery2 {
+  background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsla(0, 0%, 10%, 1)),
+    url("/src/image/portrait/alicia&kaio/06.webp");
+  background-position: center;
+  background-size: cover;
 }

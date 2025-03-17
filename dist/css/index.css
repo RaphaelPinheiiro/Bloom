@@ -85,7 +85,21 @@ body {
 }
 
 .bg-slider1 {
-  background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsl(0, 0%, 10%)), url("/src/image/01.webp");
+  background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsl(0, 0%, 10%)), url("/src/image/portrait/raizamiguel/01.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-gallery1 {
+  background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsl(0, 0%, 10%)), url("/src/image/portrait/enya&marcus/08.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-gallery2 {
+  background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsl(0, 0%, 10%)), url("/src/image/portrait/alicia&kaio/06.webp");
+  background-position: center;
+  background-size: cover;
 }
 
 :root {
@@ -285,6 +299,20 @@ a {
   transition: all 250ms cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 .c-open:hover, .c-open:focus {
+  color: var(--clr-bloom-200);
+}
+
+.c-arrow {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--clr-bloom-100);
+  font-size: 2.4rem;
+  align-self: center;
+  justify-self: end;
+  transition: all 250ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.c-arrow:hover, .c-arrow:focus {
   color: var(--clr-bloom-200);
 }
 
