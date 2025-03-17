@@ -3,6 +3,14 @@
 .c-card {
   background-color: var(--clr-bloom-200);
 
+  &__view {
+    &:hover,
+    &:focus {
+      opacity: 50%;
+      transition: $transition-global;
+    }
+  }
+
   &__name {
     color: var(--clr-bloom-100);
     text-align: center;

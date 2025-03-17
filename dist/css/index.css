@@ -20,6 +20,12 @@ picture {
   display: block;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 button {
   font-family: inherit;
   font-size: inherit;
@@ -61,6 +67,19 @@ body {
   display: grid;
 }
 
+.horizontal {
+  grid-column: span 2;
+}
+
+.vertical {
+  grid-row: span 2;
+}
+
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
 .padding {
   padding: 0 1.5rem;
 }
@@ -97,8 +116,14 @@ body {
 }
 
 .bg-gallery2 {
-  background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsl(0, 0%, 10%)), url("/src/image/portrait/alicia&kaio/06.webp");
+  background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsl(0, 0%, 10%)), url("/src/image/portrait/alicia&kaio/08.webp");
   background-position: center;
+  background-size: cover;
+}
+
+.bg-gallery3 {
+  background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsl(0, 0%, 10%)), url("/src/image/wedding/annike&thiago/18.webp");
+  background-position: top;
   background-size: cover;
 }
 
@@ -242,6 +267,10 @@ a {
 
 .c-card {
   background-color: var(--clr-bloom-200);
+}
+.c-card__view:hover, .c-card__view:focus {
+  opacity: 50%;
+  transition: all 250ms cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 .c-card__name {
   color: var(--clr-bloom-100);
@@ -448,6 +477,7 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 0.1rem;
   margin-bottom: 1.5rem;
+  grid-auto-flow: dense;
 }
 .l-main__title, .l-main__name {
   letter-spacing: 0.125em;

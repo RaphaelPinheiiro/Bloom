@@ -20,7 +20,14 @@
 
 .bg-gallery2 {
   background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsla(0, 0%, 10%, 1)),
-    url("/src/image/portrait/alicia&kaio/06.webp");
+    url("/src/image/portrait/alicia&kaio/08.webp");
   background-position: center;
+  background-size: cover;
+}
+
+.bg-gallery3 {
+  background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsla(0, 0%, 10%, 1)),
+    url("/src/image/wedding/annike&thiago/18.webp");
+  background-position: top;
   background-size: cover;
 }
