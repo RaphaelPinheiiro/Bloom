@@ -4,9 +4,13 @@
   background-color: var(--clr-bloom-400);
 }
 
+.tp-cream {
+  color: var(--clr-bloom-100);
+}
+
 .bg-slider1 {
-  background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsla(0, 0%, 10%, 1)),
-    url("/src/image/portrait/raizamiguel/01.webp");
+  background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsla(0, 0%, 10%, 0.5)),
+    url("/src/image/wedding/annike&thiago/17.webp");
   background-position: center;
   background-size: cover;
 }

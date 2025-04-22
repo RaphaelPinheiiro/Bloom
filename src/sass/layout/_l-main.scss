@@ -50,8 +50,6 @@
 
   &__gallery {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 0.1rem;
-    margin-bottom: 1.5rem;
     grid-auto-flow: dense;
   }
 
