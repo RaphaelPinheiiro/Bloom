@@ -133,7 +133,7 @@ body {
 }
 
 .bg-gallery4 {
-  background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsl(0, 0%, 10%)), url("/src/image/wedding/adriane&diogo/11.webp");
+  background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsl(0, 0%, 10%)), url("/src/image/wedding/adriane&diogo/15.webp");
   background-position: top;
   background-size: cover;
 }
@@ -487,6 +487,9 @@ a {
   max-width: 50%;
   justify-self: center;
   overflow: hidden;
+}
+.l-main__background {
+  object-position: 30% 0%;
 }
 .l-main__tabs {
   justify-content: center;
