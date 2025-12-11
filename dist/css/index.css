@@ -138,6 +138,12 @@ body {
   background-size: cover;
 }
 
+.bg-gallery5 {
+  background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsl(0, 0%, 10%)), url("/src/image/contact/01.webp");
+  background-position: top;
+  background-size: cover;
+}
+
 :root {
   --clr-bloom-100: #d7ccba;
   --clr-bloom-200: #796e59;
@@ -416,6 +422,10 @@ a {
 }
 .c-nav__link:hover, .c-nav__link:focus {
   color: var(--clr-bloom-200);
+}
+
+.c-destination {
+  display: grid;
 }
 
 .l-container {
