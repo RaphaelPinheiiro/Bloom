@@ -139,7 +139,7 @@ body {
 }
 
 .bg-gallery5 {
-  background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsl(0, 0%, 10%)), url("/src/image/contact/01.webp");
+  background-image: linear-gradient(hsla(0, 0%, 10%, 0), hsla(0, 0%, 10%, 0.5)), url("/src/image/portrait/jaqueline&miguel/01.webp");
   background-position: top;
   background-size: cover;
 }
