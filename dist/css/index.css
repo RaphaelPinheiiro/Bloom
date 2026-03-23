@@ -126,6 +126,12 @@ body {
   background-size: cover;
 }
 
+.bg-gallery3 {
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)), url("/src/image/cover/03.webp");
+  background-position: 70% 0%;
+  background-size: cover;
+}
+
 .bg-destination {
   background-image: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.7)), url("/src/image/cover/01.webp");
   background-position: bottom;
@@ -485,6 +491,9 @@ a {
   max-width: 50%;
   justify-self: center;
   overflow: hidden;
+}
+.l-main__background {
+  object-position: 70%;
 }
 .l-main__tabs {
   justify-content: center;
