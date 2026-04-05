@@ -132,8 +132,14 @@ body {
   background-size: cover;
 }
 
+.bg-gallery4 {
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)), url("/src/image/cover/04.webp");
+  background-position: 43% 0%;
+  background-size: cover;
+}
+
 .bg-destination {
-  background-image: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.7)), url("/src/image/cover/01.webp");
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.7)), url("/src/image/cover/04.webp");
   background-position: bottom;
   background-size: cover;
 }
